@@ -1,1 +1,254 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+.header{
+    /* background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../images/20200221_120821.jpg); */
+    background-color: #230352;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    
+}
+
+
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;   
+    padding-bottom: 50px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.navbar ul li{
+    margin: 30px 25px;
+}
+
+
+.menu-content{
+    text-align: center;
+}
+
+.menu-content h1{
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+    color: aliceblue
+}
+
+.menu-content p{
+    font-size: 18px;
+    line-height: 25px;
+    padding: 0 250px;
+    margin-bottom: 25px;
+    color: aliceblue;
+}
+
+.habilidades{
+    text-align: center;
+    padding: 120px 0;
+}
+
+.section-1{
+    background-color: #e1e2e6;
+}
+
+.habilidades-content h2{
+    font-size: 50px;
+    line-height: 60px;
+    color: #414247;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.habilidades-content p{
+    font-size: 18px;
+    line-height: 25px;
+    padding: 0 250px;
+    margin-bottom: 75px;
+    color: #414247;
+}
+
+.habilidades-tarjetas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.habilidades-tarjetas img{
+    margin-top: 20px;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+
+
+.tarjetas h3{
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 30px;
+    margin: 25px 15px
+}
+
+.tarjetas p{
+    font-size: 16px;
+    line-height: 25px;
+    padding: 15px 30px;
+}
+
+
+.tarjetas:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 30px -15px rgba(0,0,0,0.5);
+    transition: all 300ms ease;
+}
+
+
+
+.footer{
+    background-color: #e1e2e6;
+}
+
+.footer-contenido{
+    min-height: 15vh;
+    color: #414247;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media screen and (max-width: 576px) {
+
+    .navbar ul{
+        display: flex;
+       padding: 0;
+
+    }
+
+   
+    .navbar ul li{
+        margin: 0;
+    }
+
+    .navbar ul button{
+        margin-left: 0;
+        
+    }
+    
+    .habilidades-tarjetas{
+        flex-direction: column;
+    }
+
+     .menu-content{
+        margin-top: 10px;
+     }
+     
+    .menu-content p{
+        padding: 10px;
+    }
+
+    .educacion .contenedor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .educacion h4{
+        margin-bottom: 5px;
+    }
+
+    .grafico-barras{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grafico-barras .contenedor-padre{
+        padding: 0;
+    }
+
+    .row .tabla {
+        margin-left: 0;
+    }
+    
+    .row .nuevaexp{
+        display: inline;
+    }
+
+    
+}
+
+
+@media screen and (min-width:576px) and (max-width:1200px){
+    .navbar ul{
+        display: flex;
+       padding: 0;
+
+    }
+
+    .navbar ul li{
+        margin: 0;
+    }
+
+    .navbar ul button{
+        margin-left: 0;
+        
+    }
+
+    .menu-content p{
+        padding: 10px 40px;
+    }
+
+    .habilidades-tarjetas{
+        flex-direction: column;
+    }
+
+    .educacion .contenedor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .grafico-barras{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grafico-barras .contenedor-padre{
+        max-height: 700px;
+    }
+
+}

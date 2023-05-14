@@ -1,0 +1,76 @@
+.contenedor-form .form .form-header .form-title{
+    font-weight: normal;
+}
+
+.contenedor-form{
+    padding: 150px 0;
+    background-color: #e1e2e6;
+}
+
+.form-header h3{
+    padding: 30px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+.form {
+    background: transparent;
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    padding: 5px 35px;
+    margin-top: 30px ;
+    padding-bottom: 30px;
+    border-radius: 3px;
+}
+
+.contenedor .form .form-label{
+    display: block;
+    color: #ff851b;
+    font-size: 16px;
+    position: relative;
+}
+
+.form-input , textarea{
+    background: rgba(0,0,0,0.70);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ff851b;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.btn-submit {
+    width: 100%;
+    outline: none;
+    background: #ff851b;
+    font-size: 16px;
+    border: none;
+    color: #fff;
+    padding: 15px 0;
+   border-radius: 20px;
+}
+
+.invalido{
+    background: rgb(128, 128, 128);
+}
+
+.valido{
+    background: #ff851b;
+}
+
+.form-field{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-field p{
+    color: rgb(163, 38, 38);
+    margin-bottom: 5px;
+}
+
+

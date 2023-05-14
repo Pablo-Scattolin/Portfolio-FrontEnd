@@ -1,0 +1,47 @@
+<div class="contenedor-form">
+    
+    <div class="form-header">
+        <h3 class="form-title">Contactame</h3>
+    </div>
+
+    <form [formGroup]="formUser" class="form" #form action="https://formsubmit.co/pabloscattolin04@gmail.com"  method='post' >
+        <div class="form-field">
+            <label for="nombre" class="form-label">Nombre</label>
+            <span class="" *ngIf="nombre.errors?.['required']" [hidden]="nombre.valid || nombre.pristine">
+                <p> *Este campo es obligatorio</p>
+            </span>
+        </div>
+
+        <input type="text" class="form-input" placeholder="Ingrese su nombre" id="nombre" formControlName="nombre" name="nombre" required>
+
+        <div class="form-field">
+            <label for="apellido" class="form-label">Apellido</label>
+            <span class="" *ngIf="apellido.errors?.['required']" [hidden]="apellido.valid || apellido.pristine">
+                <p> *Este campo es obligatorio</p>
+            </span>
+        </div>
+
+        <input type="text" class="form-input" placeholder="Ingrese su apellido" id="apellido" formControlName="apellido" name="apellido" required>
+
+
+        <div class="form-field">
+            <label for="correo" class="form-label">Correo Electrónico</label>
+            <span class="1" *ngIf="correo.errors?.['email']" [hidden]="correo.valid || correo.pristine">
+                <p> El mail debe tener un formato válido</p>
+             </span>
+ 
+             <span class="2" *ngIf="correo.errors?.['required']" [hidden]="correo.valid || correo.pristine">
+                 <p>*Este campo es obligatorio</p>
+             </span>
+        </div>
+
+        <input type="text" class="form-input" placeholder="Ingrese su correo electrónico" id="correo" formControlName="correo" name="correo" required>
+
+        <label for="mensaje" class="form-label">Mensaje</label>
+        <textarea class="form-textarea" id="mensaje" placeholder="Detalle su pedido (opcional)" name="mensaje" required></textarea>
+
+        <button type="submit" class="btn-submit" [disabled]="formUser.invalid" [ngClass]="{'invalido': formUser.invalid , 'valido': formUser.valid}" (click)="form.submit()">Enviar</button>
+        
+        
+    </form>
+</div>

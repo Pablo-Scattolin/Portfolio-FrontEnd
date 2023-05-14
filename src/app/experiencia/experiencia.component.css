@@ -1,0 +1,23 @@
+.row h3{
+    text-align: center;
+    padding: 100px 0 60px 0; 
+    font-size: 30px;
+}
+
+.tabla{
+    padding-left:  100px;
+}
+
+.nuevaexp button{
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+
+tr{
+    margin: 10px;
+}
+
+.row{
+    background-color: #e1e2e6;
+    margin-right: 0;
+}

@@ -1,0 +1,24 @@
+<body>
+  <div class="login-box">
+    <h2>Inicio de Sesion</h2>
+    <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+      <div class="user-box">
+        <input type="text" name="nombreUsuario" id="nombreUsuario" [(ngModel)]="nombreUsuario" required />
+        <label>Usuario</label>
+      </div>
+      <div class="user-box">
+        <input type="password" name="password" id="password" [(ngModel)]="password" required />
+        <label>Contraseña</label>
+      </div>
+      <a href="#"> 
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <button type="submit">Ingresar</button>
+      </a>
+      
+    </form>
+  </div>
+</body>
+

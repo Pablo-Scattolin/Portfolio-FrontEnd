@@ -1,0 +1,28 @@
+<header class="header">
+
+    <div class="contenedor">
+        <div class="menu">
+            <img src="../../assets/imagenes/APLogo-20-20.png" alt="">
+            
+
+            <nav class="navbar">
+                <ul>
+                    <li ><a href="https://instagram.com/pablo_scattolin?igshid=ZGUzMzM3NWJiOQ==" target="_blank"><i class="fa-brands fa-instagram fa-beat"></i></a></li>
+                    <li><a href="https://github.com/Pablo-Scattolin" target="_blank"><i class="fa-brands fa-github fa-beat"></i></a></li>
+                    <li><a href="https://www.facebook.com/pablosky.scatto?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook fa-beat"></i></a></li>
+                    
+                    <button (click)="login()" *ngIf="!isLogged"><i class="fa-solid fa-right-to-bracket"></i> Ingresar</button>
+                    <button (click)="onLogOut()" *ngIf="isLogged"><i class="fa-solid fa-right-from-bracket fa-rotate-180"></i> Cerrar Sesion</button>
+                </ul>
+            </nav>
+
+        </div>    
+
+            <div class="menu-content">
+                <h1>Programador Web <br>
+                    Full Stack Junior</h1>
+                <p> Hola! Bienvenido a mi Portfolio Web, mi nombre es Pablo Scattolin y soy un desarrollador web con habilidades en la creación y mantenimiento de sitios web y aplicaciones web de alta calidad utilizando tecnologías modernas como Spring Boot y Angular.</p>
+            </div>
+    </div>
+</header>
+

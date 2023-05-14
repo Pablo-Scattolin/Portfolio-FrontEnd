@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    height: auto;
+    background-color: #230352;
+    display: flex;
+}
+
+.contenedor-padre{
+    width: 50%;
+    min-width: 590px;
+    padding: 200px 80px;
+}
+
+.contenedor{
+    width: 100%;
+    padding: 30px 30px 50px;
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.contenedor *{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+    font-weight: 500;    
+}
+
+h2{
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+
+.skills:not(:last-child){
+    margin-bottom: 30px;
+}
+
+.detalles{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.menu{
+    position: relative;
+    border: 1px solid cyan;
+    border-radius: 20px;
+}
+
+.menu div{
+    position: relative;
+    width: 0;
+    height: 8px;
+    border-radius: 10px;
+    background-color: cyan;
+}
+
+#html-menu{
+    animation: html-barra 2s forwards;
+}
+
+@keyframes html-barra{
+    100%{
+        width: 90%;
+    }
+}
+
+
+#css-menu{
+    animation: css-barra 2s forwards;
+}
+
+@keyframes css-barra{
+    100%{
+        width: 70%;
+    }
+}
+
+#js-menu{
+    animation: js-barra 2s forwards;
+}
+
+@keyframes js-barra{
+    100%{
+        width: 50%;
+    }
+}
+
+#angular-menu{
+    animation: angular-barra 2s forwards;
+}
+
+@keyframes angular-barra{
+    100%{
+        width: 70%;
+    }
+}
+
+#liderazgo-menu{
+    animation: liderazgo-barra 2s forwards;
+}
+
+@keyframes liderazgo-barra{
+    100%{
+        width: 85%;
+    }
+}
+
+
+#colab-menu{
+    animation: colab-barra 2s forwards;
+}
+
+@keyframes colab-barra{
+    100%{
+        width: 70%;
+    }
+}
+
+
+#adapt-menu{
+    animation: adapt-barra 2s forwards;
+}
+
+@keyframes adapt-barra{
+    100%{
+        width: 70%;
+    }
+}
+
+#pensamiento-menu{
+    animation: pensamiento-barra 2s forwards;
+}
+
+@keyframes pensamiento-barra{
+    100%{
+        width: 90%;
+    }
+}
+
